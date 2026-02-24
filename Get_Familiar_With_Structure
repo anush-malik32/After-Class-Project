@@ -1,0 +1,22 @@
+<body>
+    <h1> Anush's Get Familiar With Structure After School Project</h1>
+    <p> Hello my name is Anush
+     and this is my first after
+     class project. This paragraph
+    contains a lot of lines but the
+    browser ignores it. </p>
+    <p>Here are some quotes from Quotes To Scrape</p>
+    <!-- Add a block quotation-->
+    <blockquote
+cite="https://quotes.toscrape.com/">
+        “The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.” 
+    </blockquote>
+    <blockquote
+cite="https://quotes.toscrape.com/">
+        "It is our choices, Harry, that show what we truly are, far more than our abilities."
+    </blockquote>
+
+
+    <!-- Add a quotation in quotes-->
+    <p>Quotes To Scrapes goal is to: <q>provide a safe, legal, and easy-to-use playground for practicing and testing web scraping techniques. It is specifically designed to help developers learn how to extract data—such as quotes, authors, and tags.</q></p>
+</body>
