@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, san-serif ;
+            background-color: #f4f8fb;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            color: #2c3e50;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form to enrolll your student in one of the most best school system in NJ</h1>
+    <form>
+        <label>Name</label><br>
+        <input type="text" id="name"><br><br>
+        <label>Email ID</label><br>
+        <input type="text" id="email"><br><br>
+        <label>Contact Number</label><br>
+        <input type="password" id="contact"><br><br>
+        <label>Gender</label><br>
+        <input type="radio" id="female" name="gender"
+value="Female">Female<br>
+        <input type="radio" id="male" name="gender"
+value="Male">Male<br>
+        <input type="radio" name="gender" 
+value="Prefer not to say"> Prefer not to say<br><br>
+         <label for="grade">Please list the grade your student is in</label>
+        <input type="text" id="grade" name="grade" placeholder="Enter Grade Level Here"><br><br>
+         <label style="font-weight: bold;">Prefered Extracuriccular</label>
+
+        <div class="checkbox-group">
+            <input type="checkbox" name="extracurricular" value="Global Challenge"> Global Challenge (Art, Engineering, and Music Exploration)<br>
+            <input type="checkbox" name="extracurricular" value="Choir"> Choir<br>
+            <input type="checkbox" name="extracurricular" value="Band">Orchestra<br>
+            <input type="checkbox" name="extracurricular" value="Band"> Band<br>
+            <input type="checkbox" name="extracurricular" value="Band/Choir"> Band/Choir<br>
+            <input type="checkbox" name="extracurricular" value="Orchestra/Choir">Orchestra/Choir<br><br>
+        </div>   
+    </form>
+</body>
+</html>
