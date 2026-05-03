@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
@@ -74,6 +76,11 @@ main {
 .club-box {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    object-position: left center; /* crops more from the RIGHT */
 }
     </style>
 </head>
@@ -258,10 +265,35 @@ main {
 
         </div>
     </div>
+    <p><b>You have heard us talk all about Lazar so far. But, let me show you how much fun kids and teachers have at Lazar.</b></p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://cmsv2-assets.apptegy.net/uploads/14799/file/3300978/eba5509f-81b5-40ea-bb0d-44f4bfaa51aa.jpeg" alt="Two teachers celebrating STEM week.">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cmsv2-assets.apptegy.net/uploads/14799/file/3301047/b7b366e9-daa2-46b5-818a-099754d6c7f7.jpeg" alt="Students celeberating PRIDE week.">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://patch.com/img/cdn20/users/22362901/20200117/035559/styles/patch_image/public/lazaramc8___17154805922.jpg" alt="Students who won top 1% in the nation for math.">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
     </main>
     <footer class="decorated">
         <p><b>To enroll in Lazar please visit this <a href="School_Webpage_Form.html">form</a></b></p>
         <p><b>For additional information please visit <a href="https://www.montville.net/o/middle-school/">this link</a></b></p>
     </footer>
 </body>
-</html>
+</html>div
