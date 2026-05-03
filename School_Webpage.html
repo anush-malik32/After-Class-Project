@@ -82,6 +82,14 @@ main {
     object-fit: cover;
     object-position: left center; /* crops more from the RIGHT */
 }
+.page-link {
+    background-color: #14532D;
+    color: white;
+    border: none;
+}
+.page-link:hover {
+    background-color: #20975c;
+}
     </style>
 </head>
 <body>
@@ -291,6 +299,19 @@ main {
             </a>
         </div>
     </main>
+<ul class="pagination justify-content-center mt-4">
+
+    <!-- Page 1 (your current page) -->
+    <li class="page-item active">
+        <a class="page-link" href="#">Home</a>
+    </li>
+
+    <!-- Page 2 (your form page) -->
+    <li class="page-item">
+        <a class="page-link" href="School_Webpage_Form.html">Form</a>
+    </li>
+
+</ul>
     <footer class="decorated">
         <p><b>To enroll in Lazar please visit this <a href="School_Webpage_Form.html">form</a></b></p>
         <p><b>For additional information please visit <a href="https://www.montville.net/o/middle-school/">this link</a></b></p>

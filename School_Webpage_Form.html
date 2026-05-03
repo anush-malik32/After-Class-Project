@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, san-serif ;
@@ -16,6 +17,13 @@
         }
         label {
             font-weight: bold;
+        }
+        .pagination {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
         }
     </style>
 </head>
@@ -48,5 +56,16 @@ value="Prefer not to say"> Prefer not to say<br><br>
             <input type="checkbox" name="extracurricular" value="Orchestra/Choir">Orchestra/Choir<br><br>
         </div>   
     </form>
+<ul class="pagination justify-content-center mt-4">
+
+    <li class="page-item">
+        <a class="page-link" href="School_Webpage.html">Home</a>
+    </li>
+
+    <li class="page-item active">
+        <a class="page-link" href="#">Form</a>
+    </li>
+
+</ul>
 </body>
 </html>
