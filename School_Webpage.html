@@ -10,13 +10,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
-
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #0F2A1D;
-    color: #F5F5F5; 
+    color: #F5F5F5;
     margin: 0;
-    padding: 0;
+    display: flex;
+    min-height: 100vh;
 }
 
 header {
@@ -42,11 +50,13 @@ p {
     color: #E6F4EA; 
 }
 footer {
-    background-color: #0B1F15; 
-    color: #C7EAD1; 
+    background-color: #14532D;
+    color: #C7EAD1;
     text-align: center;
     padding: 15px;
-    background-color: #14532D;
+
+    margin-top: auto;
+
     animation: footerGlow 1s infinite alternate;
 }
     @keyframes footerGlow {
@@ -56,13 +66,16 @@ footer {
 
     }
 #text {
-            text-shadow: 2px 2px 1px #EAB308;
-            width:375px;
-            padding: 50px;
-            border: 5px solid black;
-            margin:40px 20px;
- }
+    text-shadow: 2px 2px 1px #EAB308;
 
+    max-width: 100%;
+
+    padding: 30px;
+
+    border: 5px solid black;
+
+    margin: 40px 20px;
+}
 a:hover {
     color: rgb(1, 49, 1)
 }  
@@ -72,6 +85,8 @@ a:hover {
 }  
 main {
     padding: 0 20px; /* left & right spacing */
+    flex: 1;
+    padding: 20px;
 }    
 .club-box {
     text-align: center;
@@ -90,17 +105,62 @@ main {
 .page-link:hover {
     background-color: #20975c;
 }
+.nav-pills .nav-link.active {
+    background-color: gold;
+    color: black !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#navbar-example {
+    width: 160px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.main-content {
+    margin-left: 160px;
+    width: calc(100% - 160px);
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+#navbar-example .nav-link {
+    font-size: 14px;
+    padding: 8px;
+}
+
+#navbar-example .navbar-brand {
+    font-size: 20px;
+}
     </style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="70">
+    <div class="d-flex">
+    <nav id="navbar-example" class="navbar navbar-light bg-dark flex-column align-items-stretch p-1 position-fixed" style="height:100vh; width:160px; overflow-y:auto;">
+        <a class="navbar-brand text-warning" href="#">Lazar</a>
+        <nav class="nav nav-pills flex-column">
+            <a class="nav-link text-white" href="#welcome">Welcome</a>
+            <a class="nav-link text-white" href="#schedule">Schedule</a>
+            <a class="nav-link text-white" href="#choir">Choir & Band</a>
+            <a class="nav-link text-white" href="#clubs">Clubs</a>
+            <a class="nav-link text-white" href="#carousel">Gallery</a>
+        </nav>
+    </nav>
+    <div class="main-content">
     <header>
-       <img src="https://cmsv2-assets.apptegy.net/uploads/14799/logo/16000/Lazar_Horizontal1.png" width="500">
+       <img src="https://cmsv2-assets.apptegy.net/uploads/14799/logo/16000/Lazar_Horizontal1.png" class="img-fluid" style="max-width:500px; width:100%;">
     </header>
     <div class="container">
 		<h1><b>Hello Students And Guardians!</b></h1><br><br>
 	</div>
     <main>
-        <section>
+        <section id="welcome">
     <article class="fixed">
     <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #018143;"><b>Welcome To Lazar</b></h1><br><br>
     <h2>Where:</h2>
@@ -113,10 +173,11 @@ main {
         <p><b><medium class="text-muted">The board that this school is registered to is the Montville Township Board of Education</medium></b></p><br>
         <h2>Why You Should Join</h2>
             <p><b><medium class="text-muted">Robert R. Lazar Middle School in Montville, NJ, serves grades 6-8, offering a strong academic curriculum with 73% math and 81% reading proficiency. It features a character education advisory program, competitive arts, and STEM-focused extracurriculars like MathCounts, Chamber Choir, and a STEAM Club.</medium></b></p>
-    <h2>Scheduling</h2>
+    <h2 id="schedule">Scheduling</h2>
         <p><b><medium class="text-muted">To know what your child's schedule will look like here is a sample schedule. A typical school day starts at 8:30 and ends at 3:15. In this schedule you will notice there are 2 perids for ELA and that there are 1 period each for whatever language you chose and whatever elective you choose.</medium></b></p>
 
-    <table border="10">
+    <div class="table-responsive">
+    <table class="table table-bordered table-dark">        
         <tr>
             <th>Period</th>
             <th>Time</th>
@@ -198,7 +259,8 @@ main {
         </section>
     <aside class="fixed">
     </table><br><br>
-    <h2><b>Choir & Band</b></h2>
+    </div>
+    <h2 id="choir"><b>Choir & Band</b></h2>
     <h3 id="text"><b>At our school there is a wonderful Band and Choir Progam. These two electives have a winter and spring concert every year. One of the most famous peices at this years Winter Concert was Regency Fanfare, a song made by Michael Story. Here is what the song sounds like.</b></h3>
     <audio controls autoplay muted>
         <source src="Regency Fanfare.mp3" type="audio/mp3">
@@ -208,9 +270,9 @@ main {
         <source src="Carol of The Bells.mp3" type="audio/mp3">
     </audio>
     <h3 id="text"><b>As you can tell we have a very good program at Lazar. But you want to know if these programs are fun. But to prove it to you here is a video that will convince you for sure that the Choir program is very fun and your student will enjoy it for sure.</b></h3>
-    <iframe  style="text-align: center;" width="502" height="315" src="https://www.youtube.com/embed/ESN3lF9Bkhg"title="YouTube video player"frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+    <iframe style="max-width:100%;" width="502" height="315"></iframe>
     </aside>
-    <h3 style="color: #EAB308;" ><b>Many Students have multiple hobbies and Lazar supports these hobbies through After School Clubs. These are some of the clubs that meet after school.</b></h3>
+    <h3 id="clubs" style="color: #EAB308;" ><b>Many Students have multiple hobbies and Lazar supports these hobbies through After School Clubs. These are some of the clubs that meet after school.</b></h3>
     <div class="container">
         <div class="row">
 
@@ -274,11 +336,11 @@ main {
         </div>
     </div>
     <p><b>You have heard us talk all about Lazar so far. But, let me show you how much fun kids and teachers have at Lazar.</b></p>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -291,10 +353,10 @@ main {
                     <img class="d-block w-100" src="https://patch.com/img/cdn20/users/22362901/20200117/035559/styles/patch_image/public/lazaramc8___17154805922.jpg" alt="Students who won top 1% in the nation for math.">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <a class="carousel-control-prev" href="#carousel" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <a class="carousel-control-next" href="#carousel" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
@@ -312,9 +374,11 @@ main {
     </li>
 
 </ul>
+
     <footer class="decorated">
         <p><b>To enroll in Lazar please visit this <a href="School_Webpage_Form.html">form</a></b></p>
         <p><b>For additional information please visit <a href="https://www.montville.net/o/middle-school/">this link</a></b></p>
     </footer>
+    </div>
 </body>
-</html>div
+</html>
