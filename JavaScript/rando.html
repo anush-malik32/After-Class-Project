@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Without Math.floor()</h2>
+    <p id="normal"></p>
+
+    <h2>With Math.floor()</h2>
+    <p id="floor"></p>
+
+    <script>
+
+        // WITHOUT FLOOR
+        var text1 = "";
+        var i = 0;
+
+        while (i < 6) {
+            text1 += "<br>The number is " + i.toFixed(1);
+            i += 0.7;
+        }
+
+        document.getElementById("normal").innerHTML = text1;
+
+
+        // WITH FLOOR
+        var text2 = "";
+        var j = 0;
+
+        while (j < 6) {
+            text2 += "<br>The number is " + Math.floor(j);
+            j += 0.7;
+        }
+
+        document.getElementById("floor").innerHTML = text2;
+
+    </script>
+
+</body>
+</html>
