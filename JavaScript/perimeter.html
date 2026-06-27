@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="perimeter"></p>
+    <script>
+        alert("JavaScript is running!");
+
+        var choice = prompt("Welcome to Perimeter Calculator. \n Please Enter your Choice. \n1.Perimeter of Rectangle. \n2.Perimeter of Triangle. \n3.Perimeter of Circle. \n4.Perimeter of Parallelogram");
+
+        if (choice == '1') {
+            var l = prompt('Enter the Length')
+            var b = prompt('Enter the breadth')
+            var result = 2 * (Number(l) + Number(b))
+            alert('The Perimeter is ' + result)
+            document.getElementById("perimeter").innerHTML = "The Perimeter is " + result;
+        }
+
+        else if (choice == '2') {
+            var h = prompt('Enter side 1')
+            var b = prompt('Enter side 2')
+            var c = prompt('Enter side 3')
+            var result = Number(h) + Number(b) + Number(c)
+            alert('The Perimeter is ' + result)
+            document.getElementById("perimeter").innerHTML = "The Perimeter is " + result;
+        }
+
+        else if (choice == '3') {
+            var r = prompt('Enter the radius')
+            var result = 2 * Math.PI * Number(r)
+            alert('The Perimeter is ' + result)
+            document.getElementById("perimeter").innerHTML = "The Perimeter is " + result;
+        }
+
+        else if (choice == '4') {
+            var b = prompt('Enter the base length')
+            var s = prompt('Enter the side length')
+            var result = Number(b) + Number(s) + Number(b) + Number(s)
+            alert('The Perimeter is ' + result)
+            document.getElementById("perimeter").innerHTML = "The Perimeter is " + result;
+        }
+        else {
+            alert('Invalid Choice. Please enter 1,2,3, or 4')
+        }
+    </script>
+</body>
+</html>
