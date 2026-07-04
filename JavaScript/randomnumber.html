@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+        .container{
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        h2{
+            font-size: 70px;
+            margin: 20px 0;
+        }
+        button{
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #00c6ff;
+            color: white;
+            transition: 0.2s;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Number App</h1>
+        <h2 id="number">0</h2>
+        <button id="toggleBtn">Start / Stop</button>
+    </div>
+
+    <script>
+        let numberDisplay = document.getElementById("number");
+        let button = document.getElementById("toggleBtn");
+
+        let interval = null;
+        let isRunning = false;
+        let clickCount = 0;
+
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 10) + 1;
+        }
+        function startChanging() {
+            interval = setInterval(() => {
+                numberDisplay.textContent = getRandomNumber();
+            }, 500);
+        }
+        button.addEventListener("click", function () {
+            clickCount++;
+            
+            if (clickCount % 2 === 1) {
+                stopChanging();
+                isRunning = false;
+            } else {
+                startChanging();
+                isRunning = true;
+            }
+        });
+    </script>
+</body>
+</html>
