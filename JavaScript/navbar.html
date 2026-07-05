@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navbar</title>
+    <style>
+      html {
+    scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff8f0;
+        color: #333;
+    }
+
+    /* NAVBAR */
+
+    .topnav {
+        overflow: hidden;
+        background-color: #b22222;
+        position: sticky;
+        top: 0;
+    }
+
+    .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 16px 18px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .topnav a:hover {
+        background-color: #ffcc66;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #ff9933;
+        color: white;
+    }
+
+    /* HERO SECTION */
+
+    #home {
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 120px 20px;
+    }
+
+    #home h1 {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    #home p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    /* VIEW MENU BUTTON */
+
+    .menuButton {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 35px;
+        background-color: #ff9933;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .menuButton:hover {
+        background-color: #e67e22;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+        padding: 60px 80px;
+    }
+
+    section h1 {
+        text-align: center;
+        color: #b22222;
+        font-size: 40px;
+    }
+
+    section h2 {
+        color: #ff6600;
+    }
+
+    section p {
+        line-height: 1.7;
+        font-size: 18px;
+    }
+
+    /* MENU */
+
+    #menu {
+        background-color: #fff2e6;
+    }
+
+    #menu ul {
+        list-style: square;
+        font-size: 18px;
+    }
+
+    #menu li {
+        margin-bottom: 20px;
+    }
+
+    /* GALLERY */
+
+    #gallery {
+        background-color: white;
+        text-align: center;
+    }
+
+    #gallery img {
+        width: 300px;
+        margin: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px gray;
+    }
+
+    /* SERVICES */
+
+    #services {
+        background-color: #ffe6cc;
+    }
+
+    /* OFFERS */
+
+    #offer {
+        background-color: #fff8dc;
+        text-align: center;
+    }
+
+    #offer h2 {
+        color: #cc0000;
+    }
+
+    /* CONTACT */
+
+    #contact {
+        background-color: #f7f7f7;
+    }
+
+    #contact ul {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: #b22222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#offer">Offer</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <section id="home">
+        <h1>Welcome to Spice Street</h1>
+
+        <h2>Authentic Indian Street Food</h2>
+
+        <p>
+        Fresh flavors, sizzling grills, crispy snacks, and traditional recipes served every day.
+        Experience the taste of India's busiest street markets without leaving town.
+        </p>
+
+        <a href="#menu">
+            <button>View Menu</button>
+        </a>
+
+    </section>
+    <section id="about">
+
+        <h1>About Us</h1>
+
+        <p>
+        At Spice Street, we bring the exciting flavors of Indian street food to everyone. Our recipes are inspired by the busy food markets of Mumbai, Delhi, Kolkata, and Ahmedabad, where every dish is prepared with fresh ingredients and bold spices.
+        </p>
+
+        <p>
+        Every meal is cooked fresh when you order it. We use homemade spice blends, fresh vegetables, tender meats, and traditional cooking methods to create food that tastes just like it does on the streets of India.
+        </p>
+
+        <p>
+        Whether you're craving something crispy, spicy, sweet, or refreshing, our menu has something for everyone. Our goal is to create a fun and welcoming place where families and friends can enjoy authentic Indian street food together.
+        </p>
+
+    </section>
+    <section id="menu">
+
+        <h1>Our Menu</h1>
+
+        <h2>Popular Street Foods</h2>
+
+        <ul>
+
+        <li>
+        <b>Pani Puri</b><br>
+        Crispy shells filled with spicy mint water, potatoes, chickpeas, and tangy tamarind chutney.
+        </li>
+
+        <br>
+
+        <li>
+        <b>Vada Pav</b><br>
+        Mumbai's famous potato sandwich served with garlic chutney and fried green chili.
+        </li>
+
+        <br>
+
+        <li>
+        <b>Pav Bhaji</b><br>
+        Buttery toasted bread served with rich vegetable curry and fresh onions.
+        </li>
+
+        <br>
+
+        <li>
+        <b>Samosa Chaat</b><br>
+        Crunchy samosas topped with yogurt, chutneys, onions, and crispy sev.
+        </li>
+
+        <br>
+
+        <li>
+        <b>Chicken Tikka Wrap</b><br>
+        Grilled chicken wrapped with lettuce, onions, and creamy mint sauce.
+        </li>
+
+        <br>
+
+        <li>
+        <b>Masala Fries</b><br>
+        French fries tossed in our signature Indian spice seasoning.
+        </li>
+
+        <br>
+
+        <li>
+        <b>Paneer Kathi Roll</b><br>
+        Soft flatbread filled with grilled paneer, vegetables, and spicy sauces.
+        </li>
+
+        </ul>
+
+        <h2>Desserts</h2>
+
+        <ul>
+
+        <li>Gulab Jamun</li>
+
+        <li>Rasmalai</li>
+
+        <li>Mango Kulfi</li>
+
+        </ul>
+
+        <h2>Drinks</h2>
+
+        <ul>
+
+        <li>Mango Lassi</li>
+
+        <li>Masala Chai</li>
+
+        <li>Fresh Lime Soda</li>
+
+        <li>Rose Falooda</li>
+
+        </ul>
+
+    </section>
+    <section id="gallery">
+
+        <h1>Gallery</h1>
+
+        <p>
+        Take a look at our colorful dishes, freshly prepared snacks, and delicious desserts. Every meal is made fresh and served with care.
+        </p>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxA2lzQBEVeJP2EdLiTQ5PFsrrmXdXRF3PMnBsx-H3Wg&s=10" width="250">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRJBxnITiWW6TDH33tGDU_g2Hpo1-WdilumflReBrgw&s=10" width="250">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZI8sJv8_Go96Hn3rFD6JiVIElf8mCd1i2bg2uu2E2CA&s=10" width="250">
+
+    </section>
+    <section id="services">
+        <h1>Services</h1>
+        <ul>
+            <li>Dine-In Experience</li>
+            <li>Takeout Orders</li>
+            <li>Food Delivery</li>
+            <li>Birthday Catering</li>
+            <li>Office Lunch Catering</li>
+            <li>Family Meal Packages</li>
+        </ul>
+    </section>
+    <section id="offer">
+
+        <h1>Special Offers</h1>
+
+        <h2>Monday Madness</h2>
+
+        <p>
+        Buy one Vada Pav and get the second one 50% off.
+        </p>
+
+        <h2>Family Feast</h2>
+
+        <p>
+        Spend over $50 and receive two free Mango Lassis.
+        </p>
+
+        <h2>Student Special</h2>
+
+        <p>
+        Show your student ID and receive 10% off your meal every Tuesday.
+        </p>
+
+    </section>
+    <section id="contact">
+
+        <h1>Contact Us</h1>
+
+        <p><b>Address:</b> 123 Spice Street, Edison, NJ</p>
+
+        <p><b>Phone:</b> (555) 123-4567</p>
+
+        <p><b>Email:</b> info@spicestreet.com</p>
+
+        <p><b>Hours:</b></p>
+
+        <ul>
+
+        <li>Monday - Thursday: 11 AM - 9 PM</li>
+
+        <li>Friday - Saturday: 11 AM - 10 PM</li>
+
+        <li>Sunday: 12 PM - 8 PM</li>
+
+        </ul>
+
+    </section>
+    <footer>
+
+        <p>
+        © 2026 Spice Street | Authentic Indian Street Food | Made Fresh Every Day
+        </p>
+
+    </footer>
+  </body>
+</html>
