@@ -82,6 +82,7 @@
         border-radius: 8px;
         font-size: 20px;
         font-weight: bold;
+        font-family: 'Poppins', sans-serif;
     }
 
     .menuButton:hover {
@@ -173,6 +174,24 @@
         text-align: center;
         padding: 20px;
     }
+    .slider{
+        display: flex;
+        justify-content: center;
+    }
+    .menuContainer{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+    }
+
+    .menuCard{
+        width:320px;
+        background:white;
+        padding:25px;
+        border-radius:15px;
+        box-shadow:0px 5px 15px rgba(0,0,0,.2);
+    }
     </style>
   </head>
   <body>
@@ -195,7 +214,7 @@
         Experience the taste of India's busiest street markets without leaving town.
         </p>
 
-        <a href="#menu">
+        <a href="#menu" class="menuButton">
             <button>View Menu</button>
         </a>
 
@@ -221,85 +240,95 @@
 
         <h1>Our Menu</h1>
 
-        <h2>Popular Street Foods</h2>
+        <div class="menuContainer">
+            <div class="menuCard">
+                <h2>Street Food</h2>
 
-        <ul>
+                    <ul>
+                    <li>
+                    <b>🌶️ Pani Puri</b><br>
+                    Crispy shells filled with spicy mint water, potatoes, chickpeas, and tangy tamarind chutney.
+                    </li>
 
-        <li>
-        <b>Pani Puri</b><br>
-        Crispy shells filled with spicy mint water, potatoes, chickpeas, and tangy tamarind chutney.
-        </li>
+                    <br>
 
-        <br>
+                    <li>
+                    <b>🌶️🌶️ Pav Bhaji</b><br>
+                    Buttery toasted bread served with rich vegetable curry and fresh onions.
+                    </li>
 
-        <li>
-        <b>Vada Pav</b><br>
-        Mumbai's famous potato sandwich served with garlic chutney and fried green chili.
-        </li>
+                    <br>
 
-        <br>
+                    <li>
+                    <b>🌶️🌶️🌶️ Samosa Chaat</b><br>
+                    Crunchy samosas topped with yogurt, chutneys, onions, and crispy sev.
+                    </li>
 
-        <li>
-        <b>Pav Bhaji</b><br>
-        Buttery toasted bread served with rich vegetable curry and fresh onions.
-        </li>
+                    <br>
 
-        <br>
+                
+                    <li>
+                    <b>🌶️🌶️🌶️ Masala Fries</b><br>
+                    French fries tossed in our signature Indian spice seasoning.
+                    </li>
 
-        <li>
-        <b>Samosa Chaat</b><br>
-        Crunchy samosas topped with yogurt, chutneys, onions, and crispy sev.
-        </li>
+                    </ul>
+            </div>
+            <div class="menuCard">
+                <h2>Sandwiches & Rolls</h2>
+                    <ul>
+                    <li>
+                    <b>🌶️ Paneer Kathi Roll</b><br>
+                    Soft flatbread filled with grilled paneer, vegetables, and spicy sauces.
+                    </li>
 
-        <br>
+                    <li>
+                    <b>🌶️🌶️ Chicken Tikka Wrap</b><br>
+                    Grilled chicken wrapped with lettuce, onions, and creamy mint sauce.
+                    </li>
+                    
+                    <br>
 
-        <li>
-        <b>Chicken Tikka Wrap</b><br>
-        Grilled chicken wrapped with lettuce, onions, and creamy mint sauce.
-        </li>
+                    <li>
+                    <b>🌶️🌶️ Vada Pav</b><br>
+                    Mumbai's famous potato sandwich served with garlic chutney and fried green chili.
+                    </li>  
+                    </ul> 
+            </div>
+            <div class="menuCard">
+                <h2>Desserts</h2>
 
-        <br>
+                    <ul>
 
-        <li>
-        <b>Masala Fries</b><br>
-        French fries tossed in our signature Indian spice seasoning.
-        </li>
+                    <li><b>🍯🍯🍯 Gulab Jamun</b><br>
+                    Soft milk dumplings soaked in warm cardamom and rose-flavored sugar syrup. A rich and melt-in-your-mouth classic dessert.\
 
-        <br>
+                    <li><b>🍯🍯 Rasmalai</b><br>
+                    Soft cottage cheese patties served in chilled, sweet saffron milk with a hint of cardamom.
 
-        <li>
-        <b>Paneer Kathi Roll</b><br>
-        Soft flatbread filled with grilled paneer, vegetables, and spicy sauces.
-        </li>
+                    <li><b>🍯🍯 Mango Kulfi</b><br>
+                    Traditional Indian ice cream made with creamy milk and sweet mangoes, topped with crushed pistachios.
+                    </ul>
+            </div>
+            <div class="menuCard">
+                    <h2>Drinks</h2>
 
-        </ul>
+                    <ul>
 
-        <h2>Desserts</h2>
+                    <li><b>Mango Lassi</b></li>
+                    A smooth and creamy yogurt drink blended with sweet mangoes and served ice cold for a refreshing treat.
 
-        <ul>
+                    <li><b>Masala Chai</b></li>
+                    Traditional Indian tea brewed with milk, aromatic spices, and a touch of sweetness for a warm, comforting drink.
 
-        <li>Gulab Jamun</li>
+                    <li><b>Fresh Lime Soda</b></li>
+                    Freshly squeezed lime mixed with sparkling soda and a hint of salt and sugar for a crisp, refreshing flavor.
 
-        <li>Rasmalai</li>
-
-        <li>Mango Kulfi</li>
-
-        </ul>
-
-        <h2>Drinks</h2>
-
-        <ul>
-
-        <li>Mango Lassi</li>
-
-        <li>Masala Chai</li>
-
-        <li>Fresh Lime Soda</li>
-
-        <li>Rose Falooda</li>
-
-        </ul>
-
+                    <li><b>Rose Falooda</b></li>
+                    A chilled rose-flavored milk drink layered with vermicelli, basil seeds, and creamy ice cream for a delicious dessert beverage.
+                    
+                    </ul>
+            </div>
     </section>
     <section id="gallery">
 
@@ -309,11 +338,31 @@
         Take a look at our colorful dishes, freshly prepared snacks, and delicious desserts. Every meal is made fresh and served with care.
         </p>
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxA2lzQBEVeJP2EdLiTQ5PFsrrmXdXRF3PMnBsx-H3Wg&s=10" width="250">
+       <section id="slider">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjf26gDtChtvmyTrDFqUgA1Jo870qXcylFXdXU8681mw&s=10">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpclqvsYwzbB45QiaZr51NpjHa0-fHZrI8_26-Kw2pKA&s=10">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIH9Zjvfc2Aw9Kcpx41sy8I9Http5uVHn6Jwux04mQHQ&s=10">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKcBcp0tw4asTjv6etVWQ7DfAEFhcd8MxrLc5wuY99_w&s=10">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBMhZ0Xj1Y7TeZdi7lLVHXaOp7tFFmWnxcH5iRch92_w&s=10">
+        </section>
+    </section>
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmRJBxnITiWW6TDH33tGDU_g2Hpo1-WdilumflReBrgw&s=10" width="250">
+    <script>
+        var myIndex = 0;
+        carousel();
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZI8sJv8_Go96Hn3rFD6JiVIElf8mCd1i2bg2uu2E2CA&s=10" width="250">
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+        }
+    </script>
 
     </section>
     <section id="services">
